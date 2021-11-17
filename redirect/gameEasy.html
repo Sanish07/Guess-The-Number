@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Easy Level!</title>
+    <meta name="description" content="Mini-Game Application - Guess the number.">
+    <link rel="icon" href="../images/trophy.svg">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <p class="res-box">Result : <span id="res-str"> Pending... </span> </p>
+        <h1 id="head">⭐ Guess The Number ⭐</h1>
+        <hr class="stylish-hr">
+
+        <h2 id="diff-text">Your Guess ➡</h2>
+        <br>
+
+        <input type="number" min="1" max="100" id="input-num">
+        <button type="button" class="btn btn-primary" id="check-num"> Check! </button>
+        <br>
+        <br>
+        <h4>Current Range : <span id="low-num">1</span> - <span id="high-num">100</span> </h4>
+        <br>
+        <div class="range-bar">
+            <div id="lower"> </div>
+            <div id="in-range"> </div>
+            <div id="higher"> </div>
+        </div>
+
+        <br>
+        <p class="stats">Chances left : <span id="num-guess">10</span> </p>
+        <p class="stats">Previous Guesses: <span id="guesses"> - </span> </p>
+
+        <button type="button" class="btn btn-success" id="play-new"> Play New Game </button>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="gameplay.js"></script>
+</body>
+
+</html>

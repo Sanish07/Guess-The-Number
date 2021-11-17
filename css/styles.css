@@ -1,0 +1,142 @@
+body {
+
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Merriweather', serif;
+}
+
+#main {
+    margin-top: 4%;
+    margin-left: 12%;
+    width: 80%;
+    height: 55rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding : 2rem;
+}
+
+.res-box{
+    font-size: 1.5rem;
+    border: 1px solid #000000;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #FFDE69;
+}
+
+.res-won{
+    background-color: #7AFF69;
+}
+
+.res-lost{
+    background-color: #E86161;
+}
+
+#head{
+  color: #2E2729;
+  font-size: 2.4rem;
+}
+
+.stylish-hr{
+    border: none;
+    border-bottom: 2px dotted #D14E02;
+    border-width: 6px;
+    width: 5%;
+}
+
+#diff-text{
+    margin-top: 6rem;
+    color: #8223C2;
+}
+
+.diff-box{
+    width: 70%;
+    height: 4rem;
+    margin-top: 5rem;
+    margin-left: 14rem;
+    font-size: 1.2rem;
+    border: 4px solid #000000;
+    font-family: 'Rubik', sans-serif;
+}
+
+#box1:hover , #box2:hover
+{
+    background-color: #2D8BBA;
+    cursor: pointer;
+    color: #000000;
+}
+
+#box1{
+    background-color: #199C10;
+    color: #FFFFFF;
+}
+
+#box2{
+    background-color: #B81218;
+    color: #FFFFFF; 
+}
+
+#input-num {
+    width: 5%;
+    height: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 3px solid #000000;
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+.btn{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+#main h4 {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: 'Rubik', sans-serif;
+    color: #139413;
+}
+
+.range-bar {
+    margin: 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 10%;
+    border: 1px #000000 solid;
+  }
+  
+  .range-bar > div {
+    text-align: center;
+  }
+
+#lower{
+    flex : 0%;
+    background-color: #F25111;
+}
+
+#in-range{
+    flex : 100%;  
+    background-color: #16CC3E;
+}
+
+#higher{
+    flex : 0%;
+    background-color: #F25111;
+}
+
+.stats{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color : #DE0000;
+}
+
+.stats > span {
+    position: absolute;
+    right : 15rem;
+    color : #6800DE;
+}
